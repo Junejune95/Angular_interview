@@ -115,7 +115,12 @@ The whole purpose of Angular decorators is to store metadata about a class, meth
       <li>If you decorate “@Component” on the class the class is treated as Angular component</li>
       <li>If you decorate “@NgModule” on the class it becomes a AngularModule</li>
       <b>Types of decorator</b>
-      
+       <ol>
+        <li>Method Decorator - @HostListener</li>
+        <li>Class Decorator - @NgModule,@Component,@Injectable,@Directive,@Pipe</li>
+        <li>Parameter Decorator - @Inject,@Host,@Self,@SkipSelf,@Optional</li>
+        <li>Parameter Decorator - @Input,@Output,@ContentChild & @ContentChildren,@ViewChild & @ViewChildren,@HostBinding</li>
+       </ol>
     </ul>
   </li>
 <ol>
