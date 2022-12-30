@@ -103,8 +103,15 @@ An RxJS operator is simply a function which takes a source observable as an inpu
         </ul>
   </li>
  <li>
- What is metadata?
+   <b>What is metadata?</b><br>
  Metadata is used to decorate a class so that it can configure the expected behavior of the class.
 The whole purpose of Angular decorators is to store metadata about a class, method, or property. When you configure a component, you are providing a metadata for that class that tells Angular that you have a component, and that component has a specific configuration.
  </li>
+  <li>
+       <b>What is decorator?</b><br>
+    An angular decorator are function or design pattern,which using we attach metadata to a class decoration,method property or parameter.
+    <br>
+    -If you decorate “@Component” on the class the class is treated as Angular component<br>
+    -If you decorate “@NgModule” on the class it becomes a AngularModule<br>
+  </li>
 <ol>
