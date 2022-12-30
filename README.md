@@ -111,7 +111,9 @@ The whole purpose of Angular decorators is to store metadata about a class, meth
        <b>What is decorator?</b><br>
     An angular decorator are function or design pattern,which using we attach metadata to a class decoration,method property or parameter.
     <br>
-    -If you decorate “@Component” on the class the class is treated as Angular component<br>
-    -If you decorate “@NgModule” on the class it becomes a AngularModule<br>
+    <ul>
+      <li>If you decorate “@Component” on the class the class is treated as Angular component</li>
+      <li>If you decorate “@NgModule” on the class it becomes a AngularModule</li>
+    </ul>
   </li>
 <ol>
