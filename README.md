@@ -72,7 +72,39 @@
       <li>Stream is basically a sequence of data value over time.</li>
     </ul>
    </li>
-  <li>
-    
+    <li>
+      <b>What is Subject?</b>
+      <ul>
+        <li>
+        Subjects are special types of Observers, so you can also subscribe to other Observables and listen to published data
+        </li>
+        <li>
+          he values are multicasted to many Observers
+        </li>
+        <li>There are two types of Subjects : BehaviorSubject and ReplaySubject.</li>
+        <b>ReplaySubject :</b>
+        <ul>
+          <li>
+          . If you want to have the last value replayed to an observer, even if a Subject is already closed, use the ReplaySubject
+            
+          </li>
+          <li>
+            
+          </li>
+         </ul>
+        
+      </ul>
+      <li>
+        What are operators in RxJs?
+        <ol>
+          <li>
+          Operators are logics which manipulate an observable stream and create new observable streams.
+          </li>
+          <li>
+            
+An RxJS operator is simply a function which takes a source observable as an input and returns a resulting stream.
+          </li>
+        </ol>
+  </li>
   </li>
 <ol>
