@@ -19,5 +19,30 @@
       <li>Execution</li>
       <li>Destruction</li>
     </ul>
+  </li>
   <li>
+    <b>What is Observers?</b>
+    <ul>
+      <li>
+        Observer is a set of callbacks that know how to listen to the values of the Observable.
+      </li>
+      <li>
+        observer subscribes to the observable to receive the stream.
+      </li>
+      <li>
+        It is an object that specifies callback methods to handle the three types of notifications which is an observable can send:
+        <ol>
+          <li>
+            Next: Next notification is required as a handler for every delivered value called zero or greater times after execution starts.
+          </li>
+          <li>
+            Error: Error notification is an optional. It is a handler used for error notification called zero or greater execution of the observable instance.
+          </li>
+          <li>
+            Complete: Complete notification is optional. It is a handler used for the execution of complete notification. Delayed values can keep being delivered to the next handler after execution is complete.
+          </li>
+        </ol>
+      </li>
+    </ul>
+  </li>
 <ol>
