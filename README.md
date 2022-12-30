@@ -114,6 +114,8 @@ The whole purpose of Angular decorators is to store metadata about a class, meth
     <ul>
       <li>If you decorate “@Component” on the class the class is treated as Angular component</li>
       <li>If you decorate “@NgModule” on the class it becomes a AngularModule</li>
+      <b>Types of decorator</b>
+      
     </ul>
   </li>
 <ol>
