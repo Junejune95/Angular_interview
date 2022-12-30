@@ -30,6 +30,9 @@
         observer subscribes to the observable to receive the stream.
       </li>
       <li>
+      RxJS observer is simply set of callback(next,error,complete)
+      </li>
+      <li>
         It is an object that specifies callback methods to handle the three types of notifications which is an observable can send:
         <ol>
           <li>
@@ -42,6 +45,23 @@
             Complete: Complete notification is optional. It is a handler used for the execution of complete notification. Delayed values can keep being delivered to the next handler after execution is complete.
           </li>
         </ol>
+      </li>
+    </ul>
+  </li>
+  <li>
+    What is Subscription?
+    <ul>
+      <li>
+        Subscription is an observable execution
+      </li>
+      <li>
+        Subscriptions are objects returned when an Observable is subscribed.
+      </li>
+      <li>
+        Subscription is useful mainly to cancel the execution
+      </li>
+      <li>
+        An Observable instance starts publishing values only when anyone subscribes to it. You subscribe by calling the method subscribe () of the instance, passing an observer to receive the notifications.
       </li>
     </ul>
   </li>
