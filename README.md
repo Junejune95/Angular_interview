@@ -86,17 +86,13 @@
         <ul>
           <li>
           . If you want to have the last value replayed to an observer, even if a Subject is already closed, use the ReplaySubject
-            
-          </li>
-          <li>
-            
           </li>
          </ul>
-        
       </ul>
+  </li>
       <li>
         What are operators in RxJs?
-        <ol>
+        <ul>
           <li>
           Operators are logics which manipulate an observable stream and create new observable streams.
           </li>
@@ -104,7 +100,7 @@
             
 An RxJS operator is simply a function which takes a source observable as an input and returns a resulting stream.
           </li>
-        </ol>
+        </ul>
   </li>
-  </li>
+ 
 <ol>
