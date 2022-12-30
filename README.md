@@ -65,4 +65,14 @@
       </li>
     </ul>
   </li>
+  <li>
+    <b>What is stream in RxJs?</b>
+    <ul>
+      <li>Stream in RxJs is asynchronous data emitted from observables.</li>
+      <li>Stream is basically a sequence of data value over time.</li>
+    </ul>
+   </li>
+  <li>
+    
+  </li>
 <ol>
