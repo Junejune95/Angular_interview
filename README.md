@@ -124,6 +124,40 @@ The whole purpose of Angular decorators is to store metadata about a class, meth
     </ul>
   </li>
   <li>
+    <b>What is directive?</b>
+    <ul>
+      <li>A directive is a class in Angular that is declared with a @Directive decorator.</li>
+      <li>Every directive has its own behaviour and can be imported into various components of an application.</li>
+      <li>Types of directives:</li>
+      <ol>
+        <li>
+          <b>Component directives</b>
+          <ul>
+            <li>These form the main class in directives. Instead of @Directive decorator we use @Component decorator to declare these directives. These directives have a view, a stylesheet and a selector property.</li>
+            <li>Directives with templates.It’slike a user control</li>
+          </ul>
+        </li>
+         <li>
+          <b>Structural directives</b>
+          <ul>
+            <li>Change the DOM layout by adding and removing elements.</li>
+            <li>Every structural directive has a ‘ * ’ sign before them.</li>
+            <li>We can apply these directives to any DOM element.</li>
+            <b><i>*ngIf is used to check a boolean value and if it’s truthy,the div element will be displayed.</i></b>
+             <b><i>*ngFor is used to iterate over a list and display each item of the list.</i></b>
+          </ul>
+        </li>
+         <li>
+          <b>Attribute Directives</b>
+          <ul>
+            <li>Change the appearance and behaviour of HTML elements.</li>
+            <li>For example, ngStyle( applying styles) or ngClass(applying CSS classes).</li>
+          </ul>
+        </li>
+      </ol>
+    </ul>
+  </li>
+  <li>
     <b>What is dependency injection?</b>
     <p>Dependency Injection (DI) is an important design pattern in which a class does not create dependencies itself but requests them from external sources. Dependencies are services or objects that a class needs to perform its function. Angular uses its own DI framework for resolving dependencies. The DI framework provides declared dependencies to a class when that class is instantiated.</p>
   </li>
