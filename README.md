@@ -158,6 +158,25 @@ The whole purpose of Angular decorators is to store metadata about a class, meth
     </ul>
   </li>
   <li>
+    <b>What is data binding in Angular?</b>
+    <p>Data binding is one of the most significant and effective elements for creating communication between the DOM and the component. </p>
+    <b>There are Four types of Data binding in Angular: </b>
+    <ol>
+      <li>
+        <b>Property Binding []</b> :  Data flows from component to the view
+      </li>
+       <li>
+        <b>Expression / Interpolation{{}}</b> : Data flows from componentto the view and we can mix the samewith HTMLtags
+      </li>
+       <li>
+        <b>Event Binding ()</b> : When you want to send event from the view to the component.
+      </li>
+       <li>
+        <b>Two-waybinding [()] </b> : Data flows from component to the view and vice versa.
+      </li>
+    </ol>
+   <li>
+  <li>
     <b>What is dependency injection?</b>
     <p>Dependency Injection (DI) is an important design pattern in which a class does not create dependencies itself but requests them from external sources. Dependencies are services or objects that a class needs to perform its function. Angular uses its own DI framework for resolving dependencies. The DI framework provides declared dependencies to a class when that class is instantiated.</p>
   </li>
