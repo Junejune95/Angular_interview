@@ -127,6 +127,30 @@
     | Only one component can be present per DOM element. | Many directives can be used per DOM element. |
     | @View decorator or templateurl template are mandatory in the component. | Directive doesn't use View. |
 
+15. How does  share data between two components in Angular?
+    - Parent to Child: Sharing Data via Input
+ 
+      This is probably the most common and straightforward method of sharing data. It works by using the @Input() decorator to allow data to be passed via the template.
+   
+    - Child to Parent: Sharing Data via ViewChild
+   
+      ViewChild allows a one component to be injected into another, giving the parent access to its attributes and functions. One caveat, however, is that child won’t be available until after the view has been initialized. This means we need to implement the AfterViewInit lifecycle hook to receive the data from the child.
+      
+     - Child to Parent: Sharing Data via Output() and EventEmitter
+     
+        Another way to share data is to emit data from the child, which can be listened to by the parent. This approach is ideal when you want to share data changes that occur on things like button clicks, form entires, and other user events.In the child, we declare a  variable with the Output decorator and set it equal to a new event emitter
+        
+     - Unrelated Components: Sharing Data with a Service
+       
+       When passing data between components that lack a direct connection, such as siblings, grandchildren, etc, you should have a shared service. When you have data that should aways been in sync, I find the RxJS BehaviorSubject very useful in this situation.
+       
+       You can also use a regular RxJS Subject for sharing data via the service, but here’s why I prefer a BehaviorSubject.
+         
+         - It will always return the current value on subscription - there is no need to call onnext
+         - It has a getValue() function to extract the last value as raw data.
+         -  ensures that the component always receives the most recent data.
+
+
 
 
 
