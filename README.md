@@ -101,7 +101,7 @@
 
 #### Component Questions:
 
-10. What is data binding in Angular?
+12. What is data binding in Angular?
     
     Data binding is one of the most significant and effective elements for creating communication between the DOM and the component.
     
@@ -112,12 +112,25 @@
     3. Event Binding ()</b> : When you want to send event from the view to the component.
     4. Two-waybinding [()] </b> : Data flows from component to the view and vice versa.
  
-11. Explain Components?
+13. Explain Components?
     
     In Angular, components are the basic building blocks, which control a part of the UI for any application.A component is defined using the **@Component** decorator.Every component consists of three parts, the template which loads the view for the component, a stylesheet which defines the look and feel for the component, and a class that contains the business logic for the component.
 
 
-12. Explain Module?
+14. What is the difference between a component and a directive?
+
+    | Components | Directive |
+    | ------------- | ------------- |
+    | To register a component we use @Component meta-data annotation. | To register directives we use @Directive meta-data annotation. |
+    | Component is a directive which uses shadow DOM to create encapsulated visual behavior called components. Components are typically used to create UI widgets. | Directive is used to add behavior to an existing DOM element. |
+    | Component is used to break up the application into smaller components. | Directive is use to design re-usable components. |
+    | Only one component can be present per DOM element. | Many directives can be used per DOM element. |
+    | @View decorator or templateurl template are mandatory in the component. | Directive doesn't use View. |
+
+
+
+
+14. Explain Module?
 
     A module is a place where we can group components, directives, services, and pipes. Module decides whether the components, directives, etc can be used by other modules, by exporting or hiding these elements. Every module is defined with a **@NgModule** decorator.
     
