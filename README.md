@@ -175,7 +175,20 @@ The whole purpose of Angular decorators is to store metadata about a class, meth
         <b>Two-waybinding [()] </b> : Data flows from component to the view and vice versa.
       </li>
     </ol>
-   <li>
+   </li>
+  <li>
+    <b>Explain Components?</b>
+    <p>In Angular, components are the basic building blocks, which control a part of the UI for any application.A component is defined using the <b>@Component</b> decorator. Every component consists of three parts, the template which loads the view for the component, a stylesheet which defines the look and feel for the component, and a class that contains the business logic for the component.</p>
+  </li>
+  <li>
+    <b>Explain Module?</b>
+    <p>A module is a place where we can group components, directives, services, and pipes. Module decides whether the components, directives, etc can be used by other modules, by exporting or hiding these elements. Every module is defined with a <b>@NgModule</b> decorator.</p>
+   By default, modules are of two types:
+    <ol>
+      <li>Root Module - Every application can have only one root module.A root module imports BrowserModule.</li>
+      <li>Feature Module - It can have one or more feature modules.A feature module imports CommonModule.</li>
+    </ol>
+  </li>
   <li>
     <b>What is dependency injection?</b>
     <p>Dependency Injection (DI) is an important design pattern in which a class does not create dependencies itself but requests them from external sources. Dependencies are services or objects that a class needs to perform its function. Angular uses its own DI framework for resolving dependencies. The DI framework provides declared dependencies to a class when that class is instantiated.</p>
