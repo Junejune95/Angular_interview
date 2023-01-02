@@ -190,6 +190,14 @@ The whole purpose of Angular decorators is to store metadata about a class, meth
     </ol>
   </li>
   <li>
+      <b>Explain Service?</b>
+    <p>Angular services are objects that get instantiated just once during the lifetime of an application. They contain methods that maintain data throughout the life of an application, i.e., data is available all the time. The main objective of a service is to organize and share business logic, models, or data and functions with different components of an Angular application. A service can be written once and injected into multiple components,by using dependency injection,into the component's constructor.</p>
+    <ul>
+      <li>Services avoid rewriting of code. A service can be written once and injected into all the components that use that service.</li>
+      <li>A service could be a function, variable, or feature that an application needs.</li>
+     <ul>
+  </li>
+  <li>
     <b>What is dependency injection?</b>
     <p>Dependency Injection (DI) is an important design pattern in which a class does not create dependencies itself but requests them from external sources. Dependencies are services or objects that a class needs to perform its function. Angular uses its own DI framework for resolving dependencies. The DI framework provides declared dependencies to a class when that class is instantiated.</p>
   </li>
