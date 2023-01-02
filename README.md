@@ -1,5 +1,15 @@
 # Angular_interview
 
+## Table of Contents
+
+
+* [RxJS Questions](#rxjs-questions)
+* [Decorator Questions](#decorator-questions)
+* [Directive Questions](#directive-questions)
+* [Component Questions](#component-questions)
+
+
+#### RxJS Questions:
  1. What is Observable?
     - Observable offers support for passing messages between parts of your application. They are used repeatedly in Angular and are the appropriate technique for event handling, asynchronous programming, and handling multiple values.
     - Observables are declarative in that you define a function for releasing values, but it is not executed till a consumer subscribes to it. The subscribed consumer then receives notifications before the function completes, or before they unsubscribe
@@ -39,7 +49,9 @@
 7. What are operators in RxJs?
 
    Operators are logics which manipulate an observable stream and create new observable streams.An RxJS operator is simply a function which takes a source observable as an input and returns a resulting stream.
-   
+
+#### Decorator Questions:
+
 8. What is metadata?
 
     Metadata is used to decorate a class so that it can configure the expected behavior of the class.The whole purpose of Angular decorators is to store metadata about a class, method, or property. When you configure a component, you are providing a metadata for that class that tells Angular that you have a component, and that component has a specific configuration.
@@ -55,6 +67,8 @@
      2. Class Decorator - @NgModule,@Component,@Injectable,@Directive,@Pipe
      3. Parameter Decorator - @Inject,@Host,@Self,@SkipSelf,@Optional
      4. Parameter Decorator - @Input,@Output,@ContentChild & @ContentChildren,@ViewChild & @ViewChildren,@HostBinding
+
+#### Directive Questions:
 
 10. What is directive?
     - A directive is a class in Angular that is declared with a @Directive decorator.
@@ -78,6 +92,8 @@
         - Change the appearance and behaviour of HTML elements.
         - For example, ngStyle( applying styles) or ngClass(applying CSS classes).
 
+
+#### Component Questions:
 
 10. What is data binding in Angular?
     
