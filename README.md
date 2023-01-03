@@ -70,7 +70,7 @@
 
 #### Directive Questions:
 
-10. What is directive?[example code link here](https://stackblitz.com/edit/angular-ivy-jq9ojr?file=src/app/app-parent/app-parent.component.html)
+10. What is directive?
     - A directive is a class in Angular that is declared with a @Directive decorator.
     - Every directive has its own behaviour and can be imported into various components of an application.
     - **Types of directives:**
@@ -92,7 +92,7 @@
         - Change the appearance and behaviour of HTML elements.
         - For example, ngStyle( applying styles) or ngClass(applying CSS classes).
   
- 11. What is **ng-content**?
+ 11. What is **ng-content**?[example code link here](https://stackblitz.com/edit/angular-ivy-jq9ojr?file=src/app/app-parent/app-parent.component.html)
      - The ng-content is used when we want to insert the content dynamically inside the component that helps to increase component reusability. Using ng-content we can pass content inside the component selector and when angular parses that content that appears at the place of ng-content.
      - ng-content is used to display children in a template
      - When we need to pass multiple things inside the component selector then we have to provide them unique selector either any id or class so using that unique selector we can access particular content inside the ng-content. So here “select” inside the ng-content is used to take content with matching class name app or app1.
