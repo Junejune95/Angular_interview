@@ -97,7 +97,38 @@
      - ng-content is used to display children in a template
      - When we need to pass multiple things inside the component selector then we have to provide them unique selector either any id or class so using that unique selector we can access particular content inside the ng-content. So here “select” inside the ng-content is used to take content with matching class name app or app1.[example link here](https://stackblitz.com/edit/angular-ivy-jq9ojr?file=src/app/app-parent/app-parent.component.html)
      
-
+ 12. What is the difference between **ng-template** and **ng-container**?
+ 
+     ###### ng-template
+    
+     - The <ng-template> is a template element that Angular uses with structural directives ( *ngIf , *ngFor , [ngSwitch] and custom directives)
+     - These template elements only work in the presence of structural directives, which help us to define a template that doesn’t render anything by itself, but conditionally renders them to the DOM.
+     -  It helps us create dynamic templates that can be customized and configured.
+     ```
+             <div> 
+                Ng-template Content 
+                <div *ngIf=”false else showNgTemplateContent”> 
+                   Shouldn't be displayed 
+                </div>
+             </div>
+ 
+           <ng-template #showNgTemplateContent>
+              Should be displayed
+           </ng-template>
+     ```
+     
+      ###### ng-container
+      - ng-container is an extremely simple directive that allows you to group elements in a template that doesn’t interfere with styles or layout because Angular doesn’t put it in the DOM
+      - ng-container is used as a non-rendered container to avoid having to add a span or div.
+      - we can use <ng-container> without adding any extra element to the DOM at runtime.
+      ```
+         <ng-container *ngIf="details">
+           <div *ngFor="let info of details">
+             {{ info.content }}
+           </div>
+        </ng-container>
+      ```
+     
 
 #### Component Questions:
 
