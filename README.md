@@ -181,7 +181,14 @@
          - It has a getValue() function to extract the last value as raw data.
          -  ensures that the component always receives the most recent data.
 
-
+15. What is the two-way data binding?
+    - Data sharing between a component class and its template is referred to as two-way data binding.
+    - Property binding and event binding are coupled in two-way data binding.
+    - Two-way data binding can be achieved using a ngModel directive in Angular. 
+    ```
+    <input type="text" [(ngModel)] = 'val' />
+    ```
+    - Before using ngModel to achieve two-way data binding, it’s very important to import the FormsModule from @angular/forms in app.module.ts file as shown below. FormsModule will contain the ngModule directive.
 
 
 
