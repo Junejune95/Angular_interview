@@ -52,11 +52,11 @@
 
 #### Decorator Questions:
 
-8. What is metadata?
+1. What is metadata?
 
     Metadata is used to decorate a class so that it can configure the expected behavior of the class.The whole purpose of Angular decorators is to store metadata about a class, method, or property. When you configure a component, you are providing a metadata for that class that tells Angular that you have a component, and that component has a specific configuration.
 
-9. What is decorator?
+2. What is decorator?
 
    An angular decorator are function or design pattern,which using we attach metadata to a class decoration,method property or parameter
    
@@ -68,9 +68,37 @@
      3. Parameter Decorator - @Inject,@Host,@Self,@SkipSelf,@Optional
      4. Parameter Decorator - @Input,@Output,@ContentChild & @ContentChildren,@ViewChild & @ViewChildren,@HostBinding
 
+3. What is Pipe in Angular?
+   
+   A pipe take in data as input and transforms it into an output.The pipe's purpose is to allow the transformation of an exiting value and reusability.
+   
+   - Built-in pipes in Angular : Angular comes with many built-in pipes.(uppercase,lowercase,data,json)
+   - Passing arguments to pipes :Pipes like date, currency will take arguments for pipe function, to pass argument follow the pipe name (currency) with a colon (:) and the parameter value (‘EUR’).
+   - 
+   ```
+     <p>{{ 100 | currency: 'INR' }}</p>
+     <p>{{ currentDate | date: 'dd/MM/yyyy' }}</p>
+   ```
+   
+    - Chaining multiple pipes : To chain multiple pipes together, we just have to use a pipe operator (|) between different pipe names
+    
+     ```
+       <p>{{ currentDate | date | uppercase}}</p>
+     ```
+    - There are two types of pipe in angular Pure Pipes and Impure Pipes.
+    - **Custom Pipe**
+       1. Create a Pipe Class and decorate it with the decorator @Pipe which contains two properties: name (name of the pipe) and pure (the optional property which determines the type of pipe, by default it is true, we can provide value as false to make pipe impure).
+       2. Supply a name property to be used as template code name.
+       3. Register your Pipe in the module under declarations.
+       4. Finally, implement PipeTransform and write transformation logic.
+       5.  Use your pipe in the HTML using ‘|’, which represents a pipe.
+       6.  Also, add Custom arguments if you want to.
+     
+
+
 #### Directive Questions:
 
-10. What is directive?
+1. What is directive?
     - A directive is a class in Angular that is declared with a @Directive decorator.
     - Every directive has its own behaviour and can be imported into various components of an application.
     - **Types of directives:**
@@ -92,12 +120,12 @@
         - Change the appearance and behaviour of HTML elements.
         - For example, ngStyle( applying styles) or ngClass(applying CSS classes).
   
- 11. What is **ng-content**? [example code link here](https://stackblitz.com/edit/angular-ivy-jq9ojr?file=src/app/app-parent/app-parent.component.html)
+ 2. What is **ng-content**? [example code link here](https://stackblitz.com/edit/angular-ivy-jq9ojr?file=src/app/app-parent/app-parent.component.html)
      - The ng-content is used when we want to insert the content dynamically inside the component that helps to increase component reusability. Using ng-content we can pass content inside the component selector and when angular parses that content that appears at the place of ng-content.
      - ng-content is used to display children in a template
      - When we need to pass multiple things inside the component selector then we have to provide them unique selector either any id or class so using that unique selector we can access particular content inside the ng-content. So here “select” inside the ng-content is used to take content with matching class name app or app1.
      
- 12. What is the difference between **ng-template** and **ng-container**? [example code link here](https://stackblitz.com/edit/angular-ivy-bw1u9f?file=src/app/app.component.html)
+ 3. What is the difference between **ng-template** and **ng-container**? [example code link here](https://stackblitz.com/edit/angular-ivy-bw1u9f?file=src/app/app.component.html)
  
      ###### ng-template
     
@@ -132,7 +160,7 @@
 
 #### Component Questions:
 
-12. What is data binding in Angular?
+1. What is data binding in Angular?
     
     Data binding is one of the most significant and effective elements for creating communication between the DOM and the component.
     
@@ -143,12 +171,12 @@
     3. Event Binding ()</b> : When you want to send event from the view to the component.
     4. Two-waybinding [()] </b> : Data flows from component to the view and vice versa.
  
-13. Explain Components?
+2. Explain Components?
     
     In Angular, components are the basic building blocks, which control a part of the UI for any application.A component is defined using the **@Component** decorator.Every component consists of three parts, the template which loads the view for the component, a stylesheet which defines the look and feel for the component, and a class that contains the business logic for the component.
 
 
-14. What is the difference between a component and a directive?
+3. What is the difference between a component and a directive?
 
     | Components | Directive |
     | ------------- | ------------- |
@@ -181,7 +209,7 @@
          - It has a getValue() function to extract the last value as raw data.
          -  ensures that the component always receives the most recent data.
 
-15. What is the two-way data binding?
+4. What is the two-way data binding?
     - Data sharing between a component class and its template is referred to as two-way data binding.
     - Property binding and event binding are coupled in two-way data binding.
     - Two-way data binding can be achieved using a ngModel directive in Angular. 
@@ -192,7 +220,7 @@
 
 
 
-14. Explain Module?
+5. Explain Module?
 
     A module is a place where we can group components, directives, services, and pipes. Module decides whether the components, directives, etc can be used by other modules, by exporting or hiding these elements. Every module is defined with a **@NgModule** decorator.
     
