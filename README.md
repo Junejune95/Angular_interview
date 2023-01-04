@@ -74,7 +74,7 @@
    
    - Built-in pipes in Angular : Angular comes with many built-in pipes.(uppercase,lowercase,data,json)
    - Passing arguments to pipes :Pipes like date, currency will take arguments for pipe function, to pass argument follow the pipe name (currency) with a colon (:) and the parameter value (‘EUR’).
-   - 
+   
    ```
      <p>{{ 100 | currency: 'INR' }}</p>
      <p>{{ currentDate | date: 'dd/MM/yyyy' }}</p>
@@ -94,7 +94,15 @@
        5.  Use your pipe in the HTML using ‘|’, which represents a pipe.
        6.  Also, add Custom arguments if you want to.
      
-
+4. What is the difference between pure pipe and impure pipe?
+   ###### Pure Pipe
+   - A pure pipe is only called when Angular detects a change in the value or the parameters passed to a pipe.
+   - By default a pipe is pure pipe.
+   - It updates and sorts the list on component load only
+   
+   ###### Impure Pipe
+   - An impure pipe is called on every change detection cycle in Angular.
+   - Angular calls an impure pipe for each change detection cycle, independent of the change in the input fields.(Async Pipe,JsonPipe and SlicePipe)
 
 #### Directive Questions:
 
