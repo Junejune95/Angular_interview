@@ -68,7 +68,7 @@
      3. Parameter Decorator - @Inject,@Host,@Self,@SkipSelf,@Optional
      4. Parameter Decorator - @Input,@Output,@ContentChild & @ContentChildren,@ViewChild & @ViewChildren,@HostBinding
 
-3. What is Pipe in Angular?
+3. What is Pipe in Angular? [example code here](https://stackblitz.com/edit/angular-ivy-d19hks?file=src/app/app.component.html)
    
    A pipe take in data as input and transforms it into an output.The pipe's purpose is to allow the transformation of an exiting value and reusability.
    
