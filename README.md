@@ -94,7 +94,7 @@
        5.  Use your pipe in the HTML using ‘|’, which represents a pipe.
        6.  Also, add Custom arguments if you want to.
      
-4. What is the difference between pure pipe and impure pipe?
+4. What is the difference between pure pipe and impure pipe? [example code here](https://stackblitz.com/edit/angular-ivy-htbl6q?file=src/app/app.component.html)
    ###### Pure Pipe
    - A pure pipe is only called when Angular detects a change in the value or the parameters passed to a pipe.
    - By default a pipe is pure pipe.
